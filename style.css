@@ -1,0 +1,87 @@
+body{
+	margin:0;
+	padding: 0;
+}
+.box,.box1,.box2,.box3{
+	height: 200px;
+	width: 200px;
+	background: blue;
+	animation-name: test;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	margin-top:100px;
+	margin-left: 50px;
+	float: left; 
+	
+}
+.box1{
+	border-radius: 50%;
+	float: left;
+	margin-left: 50px;
+	animation-name: test1;
+}
+.box2{
+	border-radius: 20px;
+	float: left;
+	margin-left: 50px;
+	animation-name: test2;
+
+}
+.box3{
+	border-radius: 10%;
+	float: left;
+	margin-left: 50px;
+	animation-name: test;
+	animation-play-state: paused;
+
+}
+.box4{
+	height: 100px;
+	width: 100px;
+	background: blue;
+	float: left;
+	clear: both;
+	margin-top: 50px;
+	margin-left: 50px;
+	border-radius: 10px;
+	animation-name: test4;
+	animation-duration: 5s;
+	animation-direction: reverse;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+@keyframes test4{
+  	0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+@keyframes test{
+	0%{background: blue;}
+	25%{background: pink;}
+	50%{background: red}
+	75%{background: yellow;}
+	100%{background: aqua;}
+}
+@keyframes test1{
+	0%{background: red;}
+	25%{background: aqua;}
+	50%{background: blue;}
+	75%{background: pink;}
+	100%{background: yellow;}
+}
+@keyframes test2{
+	0%{background: aqua;}
+	25%{background: red;}
+	50%{background: pink;}
+	75%{background: yellow;}
+	100%{background: blue;}
+}
+@keyframes test3{
+	0%{background: blue;}
+	25%{background: red;}
+	50%{background: pink;}
+	75%{background: aqua;}
+	100%{background: yellow;}
+}
